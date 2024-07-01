@@ -6,7 +6,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load the Naive Bayes model from a file
-with open("nb_01.sav", 'rb') as model_file:
+with open('nb_01.sav', 'rb') as model_file:
     model = pickle.load(model_file)
 
 @app.route('/')
